@@ -1,0 +1,5 @@
+E:\毕设代码\bbs\LBBS.Model\bin\Debug\LBBS.Model.dll
+E:\毕设代码\bbs\LBBS.Model\bin\Debug\LBBS.Model.pdb
+E:\毕设代码\bbs\LBBS.Model\obj\Debug\LBBS.Model.csprojResolveAssemblyReference.cache
+E:\毕设代码\bbs\LBBS.Model\obj\Debug\LBBS.Model.dll
+E:\毕设代码\bbs\LBBS.Model\obj\Debug\LBBS.Model.pdb

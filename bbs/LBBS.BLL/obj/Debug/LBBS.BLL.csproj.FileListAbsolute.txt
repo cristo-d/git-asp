@@ -1,0 +1,9 @@
+E:\毕设代码\bbs\LBBS.BLL\bin\Debug\LBBS.BLL.dll
+E:\毕设代码\bbs\LBBS.BLL\bin\Debug\LBBS.BLL.pdb
+E:\毕设代码\bbs\LBBS.BLL\bin\Debug\LBBS.DAL.dll
+E:\毕设代码\bbs\LBBS.BLL\bin\Debug\LBBS.Model.dll
+E:\毕设代码\bbs\LBBS.BLL\bin\Debug\LBBS.DAL.pdb
+E:\毕设代码\bbs\LBBS.BLL\bin\Debug\LBBS.Model.pdb
+E:\毕设代码\bbs\LBBS.BLL\obj\Debug\LBBS.BLL.csprojResolveAssemblyReference.cache
+E:\毕设代码\bbs\LBBS.BLL\obj\Debug\LBBS.BLL.dll
+E:\毕设代码\bbs\LBBS.BLL\obj\Debug\LBBS.BLL.pdb

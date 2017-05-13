@@ -1,0 +1,7 @@
+E:\毕设代码\bbs\LBBS.DAL\bin\Debug\LBBS.DAL.dll
+E:\毕设代码\bbs\LBBS.DAL\bin\Debug\LBBS.DAL.pdb
+E:\毕设代码\bbs\LBBS.DAL\bin\Debug\LBBS.Model.dll
+E:\毕设代码\bbs\LBBS.DAL\bin\Debug\LBBS.Model.pdb
+E:\毕设代码\bbs\LBBS.DAL\obj\Debug\LBBS.DAL.csprojResolveAssemblyReference.cache
+E:\毕设代码\bbs\LBBS.DAL\obj\Debug\LBBS.DAL.dll
+E:\毕设代码\bbs\LBBS.DAL\obj\Debug\LBBS.DAL.pdb
