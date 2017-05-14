@@ -7,38 +7,53 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>daiyongjun's bbs</title>
         <style type="text/css">
 <!--
 body,td,th {
 	font-size: 14px;
 }
-            .auto-style1 {
-                height: 26px;
-                width: 261px;
+            .auto-style3 {
+                width: 904px;
             }
--->
+            .auto-style4 {
+                height: 26px;
+                width: 110px;
+            }
+            .auto-style5 {
+                width: 131%;
+            }
+            .auto-style6 {
+                width: 74%;
+            }
+            .auto-style7 {
+                height: 1px;
+            }
+            .auto-style8 {
+                margin-top: 0px;
+            }
+            -->
 </style>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     
-    <form id="form1" runat="server">
-        <div>
-        <div style="text-align: center">
+    <form id="form1" runat="server" class="auto-style7">
+        <div style="margin-left:0px;padding-top:0px;text-align: center" class="auto-style8">
+        <div style="background-color:#d5b686" class="auto-style3">
+        
             <table border="0" style="width: 800px">
                 <tr>
-                    <td style="width: 807px" align="center">
+                    <td style="width: 1000px" align="center">
                   
-                        <div style="text-align: center">
+                        <div style="margin-left:0px;padding-left:0px;text-align: center">
                             <table border="0" style="width: 100%">
                                 <tr>
                                     <td style="width: 100px; height: 161px;">
-                                    </td>
-                                    <td style="width: 100px; height: 161px;">
-                        <asp:Image ID="Image2" runat="server" ImageUrl="~/images/index_02.gif" Width="863px" /></td>
+                        <asp:Image ID="Image2" runat="server" ImageUrl="~/images/index_01.jpg" Width="894px" Height="170px" /></td>
                                 </tr>
+                              
                             </table>
                         </div>
                     </td>
@@ -46,16 +61,16 @@ body,td,th {
                 <tr>
                     <td style="width: 807px; height: 44px;">
                         <div style="text-align: center">
-                            <table border="0" style="width: 131%">
+                            <table border="0" class="auto-style5">
                                 <tr>
-                                    <td colspan="6" style="width: 76px">
+                                    <td colspan="2">
                                         <div style="text-align: center">
-                                            <table border="0" width="100%">
+                                            <table border="0" class="auto-style6">
                                                 <tr>
-                                                    <td class="auto-style1">
-                                                       <asp:Label ID="username" runat="server" Text="Label"></asp:Label> </td>
-                                                    <td style="width: 100px; height: 26px;">
-                                       <asp:Label ID="Label7" runat="server" Font-Size="9pt" Text="欢迎光临网上论坛 ！" Width="210px" ForeColor="#C00000"></asp:Label> </td>
+                                                   
+                                                   <asp:Label ID="username" runat="server" Text="Label"></asp:Label> 
+                                                   <td class="auto-style4">
+                                       <asp:Label ID="Label2" runat="server" Font-Size="9pt" Text="欢迎光临网上论坛 ！" Width="141px" ForeColor="#C00000" Height="16px"></asp:Label> </td>
                                                     <td style="width: 100px; height: 26px" valign="middle">
                                                         &nbsp;</td>
                                                     <td style="width: 100px; height: 26px;">
@@ -73,36 +88,40 @@ body,td,th {
                                              Width="130px" OnClick="LinkButton2_Click" Height="16px">贴子搜索</asp:LinkButton></td>
                                                     <td style="width: 100px; height: 26px;">
                                                     </td>
-                                                    <td style="width: 806064px; height: 26px;">
-                                                        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/faxintie an niu.gif" OnClick="ImageButton_Click" /></td>
+                                                    <td style="width: 800px; height: 26px;">
+                                                        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/faxintie an niu.gif" OnClick="ImageButton_Click" Height="19px" /></td>
+                                                </tr>
                                                 </tr>
                                             </table>
                                         </div>
                                     </td>
-                                    <td style="width: 116px">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                    <uc1:divLogin ID="divLogin3" runat="server" />&nbsp;
+               </tr>
+               <tr>
+                       <td>
+                       <asp:Repeater ID="Repeater2" runat="server" DataSourceID="ObjectDataSource0">
+                       <ItemTemplate><a href="ClassContent.aspx?classid=<%#Eval("Classid")%>"> <%#Eval("Classname") %></a></ItemTemplate> </asp:Repeater>  </td>
+                       <asp:ObjectDataSource ID="ObjectDataSource0" runat="server" SelectMethod="GetAllContentclass" TypeName="LBBS.BLL.CCManager">
+                       </asp:ObjectDataSource>
+               </tr>
+               <tr>
+                       <td>
+                       <uc1:divLogin ID="divLogin3" runat="server" />&nbsp;
                        
-                                    <uc2:divMain ID="divMain1" runat="server" />&nbsp;
+                       <uc2:divMain ID="divMain1" runat="server" />&nbsp;
                             
-                                    <asp:Button ID="Button1" runat="server" Text="留言" OnClick="btnQa_Click" /></td>
-                                    <td></td>
+                       <asp:Button ID="Button1" runat="server" Text="留言" OnClick="btnQa_Click" /></td>
+                                 
                                    
-                                </tr>
-                                </table>
-                            </div>
-                        </td>
-                    </tr>
-                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-                    
+               </tr>
         </table>
-     </div>
-</div>
-    </form>
+                            </div>
+                  
+     
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+ </div>
+
+ </form>
         
 </body>
 </html>
