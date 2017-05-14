@@ -40,7 +40,21 @@ namespace bbs
 
         protected void LinkButtonuser_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Hmpage.aspx");
+            if (Session["User"] != null)
+            {
+                if (Session["username"].ToString() == "admin")
+                {
+                    Response.Redirect("ManageIndex.aspx");
+                }
+                else
+                {
+                    Response.Redirect("MyProfile.aspx");
+                }
+            }
+            else {
+                this.Page.ClientScript.RegisterStartupScript(this.GetType(), "", "<script>alert('你还未登录，请先登录！')</script>");
+                return;
+            }
         }
 
         protected void LinkButton2_Click(object sender, EventArgs e)

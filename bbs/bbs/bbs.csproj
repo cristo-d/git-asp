@@ -76,7 +76,15 @@
     <Content Include="divMain.ascx" />
     <Content Include="Global.asax" />
     <Content Include="Hmpage.aspx" />
+    <Content Include="left.aspx" />
     <Content Include="LvMessage.aspx" />
+    <Content Include="ManageIndex.aspx" />
+    <Content Include="Manager\ListContent.aspx" />
+    <Content Include="Manager\ListContentClass.aspx" />
+    <Content Include="Manager\managerUser.aspx" />
+    <Content Include="Manager\Reply.aspx" />
+    <Content Include="Manager\ViewContentClass.aspx" />
+    <Content Include="MyProfile.aspx" />
     <Content Include="newascx\top.ascx" />
     <Content Include="packages.config" />
     <Content Include="MasterPage.master" />
@@ -88,8 +96,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="right.aspx" />
     <Content Include="SearchContent.aspx" />
     <Content Include="SendTopic.aspx" />
+    <Content Include="top.aspx" />
     <Content Include="TopicContent.aspx" />
     <Content Include="UserLogin.aspx" />
     <Content Include="UserRegister.aspx" />
@@ -126,6 +136,13 @@
     <Compile Include="Hmpage.aspx.designer.cs">
       <DependentUpon>Hmpage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="left.aspx.cs">
+      <DependentUpon>left.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="left.aspx.designer.cs">
+      <DependentUpon>left.aspx</DependentUpon>
+    </Compile>
     <Compile Include="LvMessage.aspx.cs">
       <DependentUpon>LvMessage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -133,12 +150,61 @@
     <Compile Include="LvMessage.aspx.designer.cs">
       <DependentUpon>LvMessage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ManageIndex.aspx.cs">
+      <DependentUpon>ManageIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageIndex.aspx.designer.cs">
+      <DependentUpon>ManageIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ListContent.aspx.cs">
+      <DependentUpon>ListContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\ListContent.aspx.designer.cs">
+      <DependentUpon>ListContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ListContentClass.aspx.cs">
+      <DependentUpon>ListContentClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\ListContentClass.aspx.designer.cs">
+      <DependentUpon>ListContentClass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\managerUser.aspx.cs">
+      <DependentUpon>managerUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\managerUser.aspx.designer.cs">
+      <DependentUpon>managerUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Reply.aspx.cs">
+      <DependentUpon>Reply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\Reply.aspx.designer.cs">
+      <DependentUpon>Reply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ViewContentClass.aspx.cs">
+      <DependentUpon>ViewContentClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\ViewContentClass.aspx.designer.cs">
+      <DependentUpon>ViewContentClass.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MasterPage.master.cs">
       <DependentUpon>MasterPage.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MasterPage.master.designer.cs">
       <DependentUpon>MasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="MyProfile.aspx.cs">
+      <DependentUpon>MyProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyProfile.aspx.designer.cs">
+      <DependentUpon>MyProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="newascx\top.ascx.cs">
       <DependentUpon>top.ascx</DependentUpon>
@@ -148,6 +214,13 @@
       <DependentUpon>top.ascx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="right.aspx.cs">
+      <DependentUpon>right.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="right.aspx.designer.cs">
+      <DependentUpon>right.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SearchContent.aspx.cs">
       <DependentUpon>SearchContent.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -161,6 +234,13 @@
     </Compile>
     <Compile Include="SendTopic.aspx.designer.cs">
       <DependentUpon>SendTopic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="top.aspx.cs">
+      <DependentUpon>top.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="top.aspx.designer.cs">
+      <DependentUpon>top.aspx</DependentUpon>
     </Compile>
     <Compile Include="TopicContent.aspx.cs">
       <DependentUpon>TopicContent.aspx</DependentUpon>
